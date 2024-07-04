@@ -53,7 +53,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: orange;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -76,7 +76,7 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
-    color: #ff004f;
+    color: orange;
 }
 
 /*---------about---------*/
@@ -127,7 +127,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: orange;
     position: absolute;
     left: 0;
     bottom: -8px;
