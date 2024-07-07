@@ -17,7 +17,6 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/waterfall.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -240,6 +239,14 @@ nav ul li a:hover::after{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
+}
+
+.work:nth-child(2){
+    transition-delay: 200ms;
+}
+
+.work:nth-child(3){
+    transition-delay: 400ms;
 }
 
 .work{
