@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+  </head>
+  <body>
+
+    <canvas id="c"></canvas>
+
+
+    <main>
+      <div id="header">
+        <div class="container">
+          <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Areas</a></li>
+              <li><a href="#portfolio">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="header-text">
+            <p>Physics and Computer Science student</p>
+            <h1>Hi, I'm <span>Thomas Barros</span></h1>
+          </div>
+        </div>
+      </div>
+
+      <!-----------about----------- -->
+
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1 hidden">
+              <img src="images/headshot.png">
+            </div>
+            <div class="about-col-2 hidden">
+              <h1 class="sub-title">About Me</h1>
+              <p>My name is Thomas Barros. I am a third year dual Bachelor of Computer Science / Science
+              student at The University of Queensland, Australia. I have two majors in Physics and Machine Learning, 
+              with a minor in Applied Mathematics. I have a strong technical background and a passion for 
+              software engineering.</p>
+
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>Programming Languages</span><br>Python, Java, C, HTML, CSS, JavaScript, SQL, R</li>
+                  <li><span>Developer Tools</span><br>VIM, Intellij Idea, VS Code, GitHub, Git, VirtualC, MySQL, RStudio</li>
+                  <!--<li><span></span><br></li>-->
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li><span>2019</span><br>Work experience at CSIRO Pullenvale - Arduino and IoT Button programming.</li>
+                  <!--<li><span>Exp2</span><br>Experience</li>
+                  <li><span>Exp3</span><br>Experience</li>-->
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li><span>2022 - Present</span><br>Bachelor of Computer Science / Science at The University of Queensland</li>
+                  <!--<li><span>Educa2</span><br>Education</li>
+                  <li><span>Educa3</span><br>Education</li>-->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-------------services-------------->
+      <div id="services">
+        <div class="container">
+          <h1 class="sub-title">My Areas</h1>
+          <div class="services-list">
+            <div class="hidden">
+              <h2 class="hidden">Computer Science</h2>
+              <p class="hidden">Topics I have studied: discrete mathematics,
+              theory of computation, programming, object-oriented programming, computer systems principles and programming, 
+              algorithms and data structures, artificial intelligence, pattern recognition and analysis.</p>
+              <a href="https://my.uq.edu.au/programs-courses/requirements/program/2484/2022" target="_blank" class="hidden">Learn more</a>
+            </div>
+            <div class="hidden">
+              <h2 class="hidden">Physics</h2>
+              <p class="hidden">Topics I have studied: mechanincal and thermal physics, electromagnetism, fields, thermodynamics, 
+              condensed matter physics, classical mechanics, special relativity, quantum mechanics.</p>
+              <a href="https://my.uq.edu.au/programs-courses/requirements/program/2484/2022" target="_blank" class="hidden">Learn more</a>
+            </div>
+            <div class="hidden">
+              <h2 class="hidden">Mathematics</h2>
+              <p class="hidden">Topics I have studied: discrete mathematics, statistics, calculus, 
+              ordinary and partial differential equations,
+              linear algebra, number theory, real analysis.</p>
+              <a href="https://my.uq.edu.au/programs-courses/requirements/program/2484/2022" target="_blank" class="hidden">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-----------portfolio------------->
+      <div id="portfolio">
+        <div class="container">
+          <h1 class="sub-title">My Projects</h1>
+          <div class="work-list">
+            <div class="work hidden">
+              <img src="portfolio_image.png">
+              <div class="layer">
+                <h3>Portfolio Website</h3>
+                <p>Portfolio website written in HTML, CSS and JavaScript</p>
+                <a href="https://thombarros.github.io/Portfolio-website/" target="_blank" className="visit-button">Visit site</a>
+              </div>
+            </div>
+            <div class="work hidden">
+              <img src="images/sorting-visualiser.png">
+              <div class="layer">
+                <h3>Sorting Algorithm Visualiser</h3>
+                <p>Website which visualises different algorithms sorting arrays. 
+                Written with React, HTML, CSS and JavaScript</p>
+                <a href="https://thombarros.github.io/Sorting-Visualiser/" target="_blank" className="visit-button">Visit site</a>
+              </div>
+            </div>
+            <div class="work hidden">
+              <img src="images/experiment.jpg">
+              <div class="layer">
+                <h3>More projects on the way!</h3>
+                <p>To check out my projects, visit my GitHub by clicking the 'See More' button below :)</p>
+              </div>
+            </div>
+          </div>
+          <a href="https://github.com/ThomBarros?tab=repositories" target="_blank" class="btn">See more</a>
+        </div>
+      </div>
+      <!-------------contact----------------->
+      <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact me</h1>
+              <p>Email: thomas.b.barros@gmail.com</p>
+              <p>Phone: 0481144566</p>
+              <p>LinkedIn: Thomas Barros</p>
+              <a href="images/CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+              <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="cdd890cc-e259-4ed5-8975-0259080a7c54">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+           </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Copyright © Thomas Barros. Made by Thomas Barros</p>
+        </div>
+      </div>
+
+      <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+      </script>
+
+    </main>
+
+
+
+
+  
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
