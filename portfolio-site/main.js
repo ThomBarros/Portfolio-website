@@ -34,8 +34,8 @@ const scene = new THREE.Scene();
 // directionalLight.position.set(10, 20, 0); // x, y, z
 // scene.add(directionalLight);
 
-const ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
-scene.add(ambientLight);
+//const ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
+//scene.add(ambientLight);
 
 // Camera
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -66,18 +66,22 @@ document.body.onscroll = moveCamera
 
 function addStar() {
   const geometry = new THREE.SphereGeometry(0.25, 24, 24);
-  const material = new THREE.MeshStandardMaterial({ color: 0xffffff });
+  const material = new THREE.MeshStandardMaterial({ color: 0xffffff , emissive: 0xffffff});
   const star = new THREE.Mesh(geometry, material);
+  const starLight = new THREE.PointLight(0xffffff, 0.005);
+  
 
   const [x, y, z] = Array(3)
     .fill()
     .map(() => THREE.MathUtils.randFloatSpread(200));
 
   star.position.set(x, y, z);
+  starLight.position.set(x, y, z);
   scene.add(star);
+  scene.add(starLight);
 }
 
-Array(200).fill().forEach(addStar);
+Array(75).fill().forEach(addStar);
 
 
 
